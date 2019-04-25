@@ -1,0 +1,41 @@
+main{
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+#mobileNavbar a{
+    font-size: 10px;
+}
+h1{
+    color:white;
+}
+header p{
+    color: grey;
+}
+
+
+
+
+/*  ----- MEDIA QUERRIES ---------*/
+
+/*  responsive pour ecran xs */
+@media all and (max-width : 575px){
+}
+/* responsive pour ecran sm */
+@media all and (min-width : 576px ){
+}
+/* responsive pour les ecran md */
+@media all and (min-width : 768px ){
+    #nomPrenom{
+        font-size: 3em;
+    }
+}
+/* responsive pour les ecran lg */
+@media all and (min-width : 992px ){
+    #nomPrenom{
+        font-size: 4em;
+    }
+}
+/* responsive pour les ecran xl */
+@media all and (min-width : 1200px ){
+
+}
