@@ -1,33 +1,81 @@
-main{
-    padding-top: 120px;
-    padding-bottom: 70px;
+/* color palette */
+.bg1{
+    background-color: #F6F3EC;
+}
+.bg2{
+    background-color: #939963;
+}
+.bg3{
+    background-color: #99A28B;
+}
+.bg4{
+    background-color: #877974;
+}
+.bg5{
+    background-color: #2E2B32;
 }
 #mobileNavbar a{
     font-size: 10px;
+    height: 75px;
 }
 h1{
     color:white;
     font-size: 2em;
 }
+h2{
+    text-align: center;
+    font-size: 1.5em;
+}
 header p{
     color: grey;
 }
+.idle{
+    position:relative;
+}
+.conteneur_progess_bar{
+	width:100%;
+	height:15px;
+	background-color:#f7f7f7;
+	border:1px solid #e7e7e7;
+	display:inline-block;
+}
+.progress_bar{
+	background-color:#cb2025;
+	width:1%;
+	height:13px;
+	border:2px solid #f7f7f7;
 
+}
+li{
+    list-style-type: none;
+}
 
+body{
+    font-family: 'Merriweather', cursive;
+}
 
 
 /*  ----- MEDIA QUERRIES ---------*/
 
 /*  responsive pour ecran xs */
 @media all and (max-width : 575px){
+    main{
+        padding-bottom: 70px;
+    }
 }
 /* responsive pour ecran sm */
 @media all and (min-width : 576px ){
+    main{
+        padding-bottom: 70px;
+    }
 }
 /* responsive pour les ecran md */
 @media all and (min-width : 768px ){
     #nomPrenom{
         font-size: 3em;
+    }
+    main{
+        padding-bottom: 0px;
     }
 }
 /* responsive pour les ecran lg */

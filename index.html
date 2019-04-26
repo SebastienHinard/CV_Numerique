@@ -5,74 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Hinard Sébastien --CV Numérique</title>
 </head>
-<body>
-    <!-- container Bootstrap -->
-    <div class="container-fluid">
-        <!-- header -->
-        <header>
-            <!-- haut de page version mobile -->
-            <div class="bg-dark fixed-top p-2 mb-3">
-                <div class="row">
-                    <div class="col-9">
-                        <h1>Hinard Sébastien</h1>
-                        <p>Développeur Web Fullstack</p>
-                    </div>
-                    <div class="col-3 d-flex justify-items-center align-items-center">
-                        <a href="#!">
-                            <img src="assets/img/resume.png" alt="">
-                        </a>
-                    </div>
+<body class="bg1">
+    <!-- header -->
+    <header>
+        <!-- haut de page version mobile -->
+        <div class="bg5 px-2 py-1 mb-3">
+            <div class="row">
+                <div class="col-9">
+                    <h1>Hinard Sébastien</h1>
+                    <p>Développeur Web Fullstack</p>
+                </div>
+                <div class="col-3 d-flex justify-items-center align-items-center">
+                    <a href="#!">
+                        <img class="idle" src="assets/img/resume.png" alt="Icone de CV">
+                    </a>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+    <!-- container Bootstrap -->
+    <div class="container-fluid">
         <!-- main -->
         <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!-- Page des compétences -->
+            <article id="competences" class="mb-5">
+                <h2>Compétences</h2>
+                <hr class="w-50">
+                <!-- icones de compétences avec progress bar -->
+                <div class="row text-center">
+                    <div class="col-2 offset-2">
+                        <img class="img-fluid" src="assets/img/html.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="70" ></div></div>
+                        <p>HTML</p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <img class="img-fluid" src="assets/img/css.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="60" ></div></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <img class="img-fluid" src="assets/img/bootstrap.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="50" ></div></div>
+                        <p>Boostrap</p>
+                    </div>
+                    <div class="col-2 offset-2">
+                        <img class="img-fluid" src="assets/img/javascript.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="50" ></div></div>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <img class="img-fluid" src="assets/img/jquery.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="60" ></div></div>
+                        <p>JQuery</p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <img class="img-fluid" src="assets/img/linux.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="70" ></div></div>
+                        <p>Linux</p>
+                    </div>
+                    <div class="col-2 offset-2">
+                        <img class="img-fluid" src="assets/img/github.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="50" ></div></div>
+                        <p>Github</p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <img class="img-fluid" src="assets/img/atom.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="80" ></div></div>
+                        <p>Atom</p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <img class="img-fluid" src="assets/img/english.png" alt="">
+                        <div class="progress conteneur_progess_bar shadow-sm"><div class="progress progress_bar" pourcent="100" ></div></div>
+                        <p>Anglais</p>
+                    </div>
+                </div>
+                <hr class="w-25">
+                <!-- autres compétences -->
+                <div class="row">
+                    <div class="col-4">
+                        <p>Autonomie</p>
+                        <p>Initiative</p>
+                        <p>Veille technologique</p>
+                        <p>Méthodologie</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Rigueur</p>
+                        <p>Travail en équipe</p>
+                        <p>Contact clientèle</p>
+                        <p>Encadrement</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Analyse et synthèse</p>
+                        <p>Résoltion de conflits</p>
+                        <p>Sens des priorités</p>
+                        <p>Gentil</p>
+                    </div>
+                </div>
+            </article>
+            <!-- Page de formation -->
+            <article id="formation">
+                <h2>Formation</h2>
+                <hr class="w-50">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <!-- Page d'experiences professionelles -->
+            <article id="experience">
+                <h2>Expérience</h2>
+                <hr class="w-50">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <!-- Page A propos -->
+            <article id="aPropos">
+                <h2>A propos...</h2>
+                <hr class="w-50">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <!-- Page de contact -->
+            <article id="contact">
+                <h2>Contact</h2>
+                <hr class="w-50">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </main>
         <!-- footer -->
         <footer>
             <!-- navbar sticky pour version mobile -->
-            <nav id="mobileNavbar" class="d-md-none d-flex justify-content-around navbar fixed-bottom navbar-dark bg-dark pb-0 text-center">
+            <nav id="mobileNavbar" class="d-md-none d-flex justify-content-around navbar fixed-bottom navbar-dark bg5 pb-0 text-center">
                 <a class="navbar-brand" href="#!">
                     <div>
-                        <img src="assets/img/skill.png" alt="">
+                        <img class="idle" src="assets/img/skill.png" alt="Icone compétences">
                         <p class="mb-0">Compétences</p>
                     </div>
                 </a>
                 <a class="navbar-brand" href="#!">
                     <div>
-                        <img src="assets/img/scholarship.png" alt="">
+                        <img class="idle" src="assets/img/scholarship.png" alt="Icone Formation">
                         <p class="mb-0">Formation</p>
                     </div>
                 </a>
                 <a class="navbar-brand" href="#!">
                     <div>
-                        <img src="assets/img/work.png" alt="">
+                        <img class="idle" src="assets/img/work.png" alt="Icone Expérience">
                         <p class="mb-0">Expérience</p>
                     </div>
                 </a>
                 <a class="navbar-brand" href="#!">
                     <div>
-                        <img src="assets/img/info.png" alt="">
+                        <img class="idle" src="assets/img/info.png" alt="Icone à propos">
                         <p class="mb-0">A propos</p>
                     </div>
                 </a>
                 <a class="navbar-brand" href="#!">
                     <div>
-                        <img src="assets/img/contact.png" alt="">
+                        <img class="idle" src="assets/img/contact.png" alt="Icone contact">
                         <p class="mb-0">Contact</p>
                     </div>
                 </a>
             </nav>
-        </main>
-
         </footer>
     </div>
     <!-- scripts JQuery Popper et Bootstrap-->
