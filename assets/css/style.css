@@ -1,22 +1,21 @@
 /* color palette */
-.bg1{
-    background-color: #F6F3EC;
+.bg1{ background-color: #F6F3EC; }
+.bg2{ background-color: #939963; }
+.bg3{ background-color: #99A28B; }
+.bg4{ background-color: #877974; }
+.bg5{ background-color: #2E2B32; }
+html{
+    scroll-behavior: smooth;
 }
-.bg2{
-    background-color: #939963;
-}
-.bg3{
-    background-color: #99A28B;
-}
-.bg4{
-    background-color: #877974;
-}
-.bg5{
-    background-color: #2E2B32;
+#mobileNavbar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 #mobileNavbar a{
     font-size: 10px;
     height: 75px;
+    max-height: 75px;
 }
 h1{
     color:white;
@@ -26,8 +25,15 @@ h2{
     text-align: center;
     font-size: 1.5em;
 }
+h3{
+    text-align: center;
+    font-size: 1em;
+}
 header p{
     color: grey;
+}
+#autresCompetences p{
+    font-size: .8em;
 }
 .idle{
     position:relative;
@@ -60,13 +66,13 @@ body{
 /*  responsive pour ecran xs */
 @media all and (max-width : 575px){
     main{
-        padding-bottom: 70px;
+        padding-bottom: 75px;
     }
 }
 /* responsive pour ecran sm */
 @media all and (min-width : 576px ){
     main{
-        padding-bottom: 70px;
+        padding-bottom: 75px;
     }
 }
 /* responsive pour les ecran md */
