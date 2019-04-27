@@ -17,10 +17,9 @@ html{
     height: 75px;
     max-height: 75px;
 }
-#cvPapier{
-    height: inherit;
+.icone{
+    height: 2.5vw;
 }
-
 h1{
     color:white;
     font-size: 7vw;
