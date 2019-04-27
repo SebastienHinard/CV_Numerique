@@ -24,23 +24,29 @@ h1{
     color:white;
     font-size: 7vw;
 }
-h2{
+article h2{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 5vw;
 }
 h3{
     text-align: center;
-    font-size: 1em;
+    font-size: 3.5vw;
 }
 p{
     font-size: 2.5vw;
 }
-header p{
+header h2, header p{
+        color: grey;
+}
+header h2{
+    font-size: 3.5vw;
+}
+#stickyNavbar a, #contact{
     color: grey;
 }
-/* #autresCompetences p{
-    font-size: .8em;
-} */
+#stickyNavbar{
+    border-bottom: 1px solid grey;
+}
 .idle{
     position:relative;
 }
@@ -58,42 +64,36 @@ header p{
 	border:2px solid #f7f7f7;
 
 }
-li{
-    list-style-type: none;
-}
-
 body{
     font-family: 'Merriweather', cursive;
+    padding-bottom: 75px;
 }
-
-
-
 /*  ----- MEDIA QUERRIES ---------*/
 @media handheld{
     ::-webkit-scrollbar {
         display: none;
     }
 }
-
-/*  responsive pour ecran xs */
-@media all and (max-width : 575px){
-    main{
-        padding-bottom: 75px;
+/* mode paysage */
+@media (orientation: landscape) {
+    #mobileNavbar{
+        display: none;
+    }
+    #stickyNavbar{
+        display: flex;
     }
 }
 /* responsive pour ecran sm */
 @media all and (min-width : 576px ){
-    main{
-        padding-bottom: 75px;
-    }
+
 }
 /* responsive pour les ecran md */
 @media all and (min-width : 768px ){
-    #nomPrenom{
-        font-size: 3em;
-    }
     main{
         padding-bottom: 0px;
+    }
+    #mobileNavbar{
+        display: none;
     }
 }
 /* responsive pour les ecran lg */
