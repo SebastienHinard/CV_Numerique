@@ -10,7 +10,7 @@
     <title>Hinard Sébastien --CV Numérique</title>
 </head>
 <body class="bg1">
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 px-md-5">
         <!-- header -->
         <header>
             <!-- haut de page version mobile -->
@@ -37,7 +37,7 @@
         </header>
     </div>
     <!-- container Bootstrap -->
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 px-md-5">
         <!-- navbar sticky top pour PC et mode paysage -->
         <nav id="stickyNavbar" class="d-none d-md-flex justify-content-center navbar sticky-top navbar-dark bg5">
             <a class="navbar-brand" href="#competences">Compétences</a>
@@ -47,15 +47,23 @@
             <a class="navbar-brand" href="#contact">Contact</a>
         </nav>
         <!-- main -->
-        <main class="mx-5 mt-3">
+        <main class="mx-3 mt-5">
             <!-- Page A propos -->
-            <article id="aPropos">
+            <article id="aPropos" class="pb-5 shadow">
                 <h2>A propos...</h2>
                 <hr class="w-50">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="row">
+                    <div class="col-7">
+                        <p>is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-5">
+                        <img class="img-fluid shadow"src="assets/img/photo_mini.JPG" alt="">
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, enim, voluptatum accusamus praesentium iure ea qui! Quod non deleniti tempora ratione deserunt autem voluptatem totam nesciunt, voluptates beatae neque facilis.</p>
             </article>
             <!-- Page des compétences -->
-            <article id="competences" class="py-5">
+            <article id="competences" class="py-5 shadow">
                 <h2>Compétences</h2>
                 <hr class="w-50">
                 <!-- icones de compétences avec progress bar -->
@@ -125,33 +133,88 @@
                 </div>
             </article>
             <!-- Page de formation -->
-            <article id="formation" class="py-5">
+            <article id="formation" class="py-5 shadow">
                 <h2>Formation</h2>
                 <hr class="w-50">
                 <div class="row">
-                    <div class="col-1">
-
-                    </div>
+                    <div class="col-1 bg3 pr-3"></div>
                     <div class="col-11">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4>La Manu - école du numérique - Amiens ( 80 )</h4>
+                        <ul>
+                            <li>Formation intensive de 865 heures.</li>
+                            <li>Préparation au titre professionnel Développeur web et web mobile ( RNCP 31114 niveau III BAC+2 ).</li>
+                            <li>Apprendre à être autonome.</li>
+                            <li>Travail en équipe.</li>
+                            <li>Utilisation de nombreux logiciels, frameworks et languages de programmation.</li>
+                            <li>Apprentissage sous forme de projets concrets d’entreprise.</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 bg4 pr-3"></div>
+                    <div class="col-11">
+                        <h4>Suivi de MOOC et auto-formation</h4>
+                        <ul>
+                            <li>W3School. ( JS , JQuery , Boostrap , PHP ... )</li>
+                            <li>OpenclassRoom. ( HTML/CSS , Python ... )</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 bg3 pr-3"></div>
+                    <div class="col-11">
+                        <h4>Université de Picardie Jules Verne - Amiens ( 80 )</h4>
+                        <ul>
+                            <li>Langues Littérature et Civilisations Etrangères.</li>
+                            <li>Niveau Licence.</li>
+                            <li>Pratique et théorie de la langue.</li>
+                            <li>Phonétique, phonologie.</li>
+                            <li>Histoire et politique américaine et anglaise.</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 bg4 pr-3"></div>
+                    <div class="col-11">
+                        <h4>Lycée Jean Calvin - Noyon ( 60 )</h4>
+                        <ul>
+                            <li>Préparation et obtention du Baccalauréat littéraire.</li>
+                        </ul>
                     </div>
                 </div>
             </article>
             <!-- Page d'experiences professionelles -->
-            <article id="experience" class="py-5">
+            <article id="experience" class="py-5 shadow">
                 <h2>Expérience</h2>
                 <hr class="w-50">
                 <div class="row">
                     <div class="col-11">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4>Responsable Adjoint - Micromania-Glisy ( 80 )</h4>
+                        <ul>
+                            <li>Encadrement d’équipe, formation des nouveaux vendeurs, recrutement.</li>
+                            <li>Mise en place du marketing.</li>
+                            <li>Analyse des résultats, mise en place et suivi des objectifs de l’équipe.</li>
+                            <li>Suivi et résolution des litiges et incidents (S.A.V, problèmes internes).</li>
+                        </ul>
                     </div>
-                    <div class="col-1">
-
+                    <div class="col-1 bg2 pl-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-11">
+                        <h4>Vendeur - Micromania-Glisy ( 80 )</h4>
+                        <ul>
+                            <li>Accueil, conseil et fidélisation de la clientèle.</li>
+                            <li>Vente de produits et de services.</li>
+                            <li>Force de proposition.</li>
+                            <li>Gestion des colis, inventaires.</li>
+                        </ul>
                     </div>
+                    <div class="col-1 bg3 pl-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-11">
+                        <h4>Employé d'usine - Rhodia - Ribécourt ( 60 ) </h4>
+                        <ul>
+                            <li>Emplois saisonniers. Travail de nuit occasionnel.</li>
+                            <li>Accueil, remplissage et pesée des citernes.</li>
+                            <li>Enfûtage, entretien du matériel.</li>
+                        </ul>
+                    </div>
+                    <div class="col-1 bg2 pl-3"></div>
                 </div>
             </article>
             <!-- Page More infos -->
@@ -159,7 +222,8 @@
                 <h2>Plus d'infos...</h2>
                 <hr class="w-50">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Centres d'intérêt</h3>
+                <p class="text-muted text-center">Parcequ'il n'y a pas que le code dans la vie.</p>
             </article>
         </main>
         <!-- footer -->

@@ -49,7 +49,7 @@ function updateAnimations(){
         }
     });
     //apparition du texte
-    $.each($('p'),function(){
+    $.each($('p, li, h2, h3, h4, img'),function(){
         if ( isInViewport($(this)) ){
             $(this).animate({'opacity' : 1}, 1000);
         }else{
