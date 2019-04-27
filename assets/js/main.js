@@ -11,6 +11,8 @@ $(function(){
             $(this).delay(offset).animate({top:'-8'},'fast').animate({top:'0'},'fast');
         });
     }
+    // je met à jour les animations
+    updateAnimations();
     //smooth scroll lorsque je clique sur un lien
     $('a').click(function(){
         // j'anime le html et le body et je scroll vers l'ancre href
@@ -22,9 +24,15 @@ $(function(){
 });
 //si je scrolle
 $(window).scroll(function(){
+    //je met à jour les animations
+    updateAnimations();
+});
+//cette fonction met à jour les animations se déclenchant à
+//l'apparition sur l'écran
+function updateAnimations(){
     //animation des progressbars
     $( ".progress_bar" ).each(function() {
-        if ( isInViewport($(this))){
+        if ( isInViewport($(this)) ){
             //je recupère la valeur de l'attribut pourcent
             var percent = parseInt($( this ).attr("pourcent"));
             //selon la valeur de la compétence j'assigne a la variable progressColor la couleur
@@ -33,24 +41,28 @@ $(window).scroll(function(){
             else if(percent<=100) { var progressColor='green'; }
             //on change la couleur et on anime la barre de progression
             $(this).css({backgroundColor: progressColor});
-            console.log('var percent: '+ percent + ' / width: ' + $(this).width());
-            $(this).stop();
+            // $(this).stop();
             $(this).animate({'width': percent+'%'}, 1000);
         }else{
             $(this).stop();
             $(this).css('width','1%');
         }
     });
-});
+    //apparition du texte
+    $.each($('p'),function(){
+        if ( isInViewport($(this)) ){
+            $(this).animate({'opacity' : 1}, 1000);
+        }else{
+            $(this).stop();
+            $(this).css('opacity' , '.2');
+        }
+    });
+}
 //cette fonction vérifie que l'élément qui appelle la fonction est visible à l'écran
 function isInViewport(element){
     var windowTop = $(window).scrollTop();
-    var windowBottom = windowTop + $(window).height();
+    var windowBottom = windowTop + $(window).innerHeight();
     var elementTop = $(element).offset().top;
-    var elementBottom = elementTop + $(element).height();
-    console.log('windowTop: ' + windowTop);
-    console.log('windowBottom: ' + windowBottom);
-    console.log('elementTop: ' + elementTop);
-    console.log('elementBottom: ' + elementBottom);
-    return ( ( elementTop >= windowTop ) && ( elementBottom <= windowBottom ) )
+    var elementBottom = elementTop + $(element).outerHeight();
+    return ( (elementBottom >= windowTop && elementBottom <= windowBottom)  ||  (elementTop >= windowTop && elementTop <= windowBottom) );
 }
