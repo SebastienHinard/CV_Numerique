@@ -17,6 +17,10 @@ html{
     height: 75px;
     max-height: 75px;
 }
+#cvPapier{
+    height: inherit;
+}
+
 h1{
     color:white;
     font-size: 7vw;
@@ -68,7 +72,7 @@ body{
 /*  ----- MEDIA QUERRIES ---------*/
 @media handheld{
     ::-webkit-scrollbar {
-        display: none; 
+        display: none;
     }
 }
 
