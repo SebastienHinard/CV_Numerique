@@ -80,7 +80,7 @@ body{
         display: none;
     }
     #stickyNavbar{
-        display: block;
+        display: flex!important;
     }
 }
 /* responsive pour ecran sm */
