@@ -10,9 +10,6 @@ html{
 #mobileHeader{
     height: 100px;
 }
-/* #cvPapier{
-    height: 100px;
-} */
 #mobileNavbar{
     display: flex;
     justify-content: center;
@@ -25,7 +22,7 @@ html{
 }
 h1{
     color:white;
-    font-size: 6vw;
+    font-size: 7vw;
 }
 h2{
     text-align: center;
