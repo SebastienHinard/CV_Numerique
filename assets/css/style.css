@@ -4,9 +4,6 @@
 .bg3{ background-color: #99A28B; }
 .bg4{ background-color: #877974; }
 .bg5{ background-color: #2E2B32; }
-body{
-    overflow: hidden;
-}
 html{
     scroll-behavior: smooth;
 }
@@ -67,7 +64,13 @@ body{
 }
 
 
+
 /*  ----- MEDIA QUERRIES ---------*/
+@media handheld{
+    ::-webkit-scrollbar {
+        display: none; 
+    }
+}
 
 /*  responsive pour ecran xs */
 @media all and (max-width : 575px){
