@@ -6,7 +6,9 @@
 .bg5{ background-color: #2E2B32; }
 html{
     scroll-behavior: smooth;
+    background-color: #99A28B;
 }
+
 #mobileNavbar{
     display: flex;
     justify-content: center;
@@ -39,7 +41,7 @@ h4{
     text-shadow: 4px 4px 10px grey;
 }
 p, li{
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 li{
     list-style: none;
@@ -91,6 +93,9 @@ body{
     #stickyNavbar{
         display: flex!important;
     }
+    body{
+        padding-bottom: 0px;
+    }
 }
 /* responsive pour ecran sm */
 @media all and (min-width : 576px ){
@@ -109,6 +114,10 @@ body{
 @media all and (min-width : 992px ){
     #nomPrenom{
         font-size: 4em;
+    }
+    body{
+        max-width: 85%;
+        margin: auto;
     }
 }
 /* responsive pour les ecran xl */
