@@ -51,7 +51,7 @@ function updateAnimations(){
     //apparition du texte
     $.each($('p, li, h2, h3, h4, img'),function(){
         if ( isInViewport($(this)) ){
-            $(this).animate({'opacity' : 1}, 1000);
+            $(this).animate({'opacity' : 1}, 750);
         }else{
             $(this).stop();
             $(this).css('opacity' , '.2');
