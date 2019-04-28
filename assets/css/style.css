@@ -82,6 +82,12 @@ body{
     font-family: 'Merriweather', cursive;
     padding-bottom: 75px;
 }
+.grow{
+    transition: .2s ease-in-out;
+}
+.grow:hover{
+    transform: scale(1.2);
+}
 /*  ----- MEDIA QUERRIES ---------*/
 @media handheld{
     ::-webkit-scrollbar {
