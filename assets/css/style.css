@@ -254,7 +254,7 @@ body{
 
 
 /*  ----- MEDIA QUERRIES ---------*/
-@media handheld and (orientation: portrait){
+@media (orientation: portrait){
     .container-fluid{
         overflow: hidden;
     }
