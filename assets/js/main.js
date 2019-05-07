@@ -33,8 +33,8 @@ function updateAnimations(){
     //animation des progressbars
     $( ".progress_bar" ).each(function() {
         if ( isInViewport($(this)) ){
-            //je recupère la valeur de l'attribut pourcent
-            var percent = parseInt($( this ).attr("pourcent"));
+            //je recupère la valeur de l'attribut level
+            var percent = parseInt($( this ).attr("data-level"));
             //selon la valeur de la compétence j'assigne a la variable progressColor la couleur
             if(percent<25)	{ var progressColor='red'; }
             else if(percent<70)	{ var progressColor='orange'; }

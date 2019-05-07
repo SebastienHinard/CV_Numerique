@@ -20,6 +20,10 @@ html{
 #cvPapier p{
     font-size: 2vw;
 }
+#myPicture{
+    position: relative;
+    max-height: inherit;
+}
 #centresInteret p{
     font-size: 2.5vw;
 }
@@ -292,7 +296,7 @@ body{
         font-size: 4em;
     }
     body{
-        max-width: 85%;
+        max-width: 1000px;
         margin: auto;
     }
 }
