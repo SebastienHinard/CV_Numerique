@@ -5,10 +5,6 @@
 .bg4{ background-color: #877974; }
 .bg5{ background-color: #2E2B32; }
 
-.container-fluid{
-    overflow: hidden;
-}
-
 a{
     color:inherit;
     transition: .5s ease-in-out;
@@ -76,9 +72,6 @@ h4{
     font-size: 1.2em;
     text-shadow: 4px 4px 10px grey;
 }
-/* p{
-    font-size: 3vw;
-} */
 #stickyNavbar a, #contact{
     color: grey;
 }
@@ -114,6 +107,9 @@ body{
 }
 /* timeline */
 
+.timeline-panel{
+    background-color: white;
+}
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -192,7 +188,6 @@ body{
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    /* background-color: #999999; */
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -259,10 +254,10 @@ body{
 
 
 /*  ----- MEDIA QUERRIES ---------*/
-@media handheld{
-    /* ::-webkit-scrollbar {
-        display: none;
-    } */
+@media handheld && (max-width : 576px){
+    .container-fluid{
+        overflow: hidden;
+    }
 }
 /* mode paysage */
 @media (orientation: landscape) {
