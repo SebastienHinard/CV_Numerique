@@ -4,7 +4,9 @@
 .bg3{ background-color: #99A28B; }
 .bg4{ background-color: #877974; }
 .bg5{ background-color: #2E2B32; }
-
+i{
+    color: white;
+}
 a{
     color:inherit;
     transition: .5s ease-in-out;
