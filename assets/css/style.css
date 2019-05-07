@@ -263,9 +263,9 @@ body{
 
 /*  ----- MEDIA QUERRIES ---------*/
 @media handheld{
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         display: none;
-    }
+    } */
 }
 /* mode paysage */
 @media (orientation: landscape) {
