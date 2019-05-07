@@ -17,6 +17,9 @@ html{
     scroll-behavior: smooth;
     background-color: #99A28B;
 }
+#cvPapier p{
+    font-size: 2vw;
+}
 #centresInteret p{
     font-size: 2.5vw;
 }
