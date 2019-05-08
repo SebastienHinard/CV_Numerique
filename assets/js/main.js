@@ -48,15 +48,15 @@ function updateAnimations(){
             $(this).css('width','1%');
         }
     });
-    //apparition du texte
-    $.each($('section'),function(){
-        if ( isInViewport($(this)) ){
-            $(this).animate({'opacity' : 1}, 1000);
-        }else{
-            $(this).stop();
-            $(this).css('opacity' , '.2');
-        }
-    });
+    // //apparition du texte
+    // $.each($('section'),function(){
+    //     if ( isInViewport($(this)) ){
+    //         $(this).animate({'opacity' : 1}, 1000);
+    //     }else{
+    //         $(this).stop();
+    //         $(this).css('opacity' , '.2');
+    //     }
+    // });
 }
 //cette fonction vérifie que l'élément qui appelle la fonction est visible à l'écran
 function isInViewport(element){
