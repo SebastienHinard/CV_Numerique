@@ -49,9 +49,9 @@ function updateAnimations(){
         }
     });
     //apparition du texte
-    $.each($('p:not(.nofade), li, h2, h3, h4, img:not(.nofade)'),function(){
+    $.each($('section'),function(){
         if ( isInViewport($(this)) ){
-            $(this).animate({'opacity' : 1}, 750);
+            $(this).animate({'opacity' : 1}, 1000);
         }else{
             $(this).stop();
             $(this).css('opacity' , '.2');
