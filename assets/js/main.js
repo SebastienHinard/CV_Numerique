@@ -1,3 +1,6 @@
+//je cache tous les centres d'interet sauf le premier
+$('#centresInteret article').not('#music').hide();
+var currentArticle=$('#music');
 //quand la page est chargée
 $(function(){
     //on appelle à intervale régulier la fonction qui animte les icones
@@ -21,6 +24,13 @@ $(function(){
         }, 500);
         return false;
     });
+    //quand je clique sur un selecteur pour les centres d'interet
+    $('.selector').click(function(){
+        let thisArticle=$(this).attr('class').split(' ')[0];
+        currentArticle.hide();
+        currentArticle=$('#'+thisArticle);
+        $('#'+thisArticle).fadeIn(2000);
+    })
 });
 //si je scrolle
 $(window).scroll(function(){

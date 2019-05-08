@@ -27,12 +27,6 @@ html{
     position: relative;
     max-height: inherit;
 }
-#centresInteret p{
-    font-size: 2.5vw;
-}
-#centresInteret a{
-    font-weight: bold;
-}
 #mobileNavbar{
     display: flex;
     justify-content: center;
