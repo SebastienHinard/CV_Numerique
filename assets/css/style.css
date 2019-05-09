@@ -7,6 +7,10 @@
 i{
     color: white;
 }
+article{
+    border: 1px solid #d4d4d4;
+    border-radius: 10px 10px;
+}
 a{
     color:inherit;
     transition: .5s ease-in-out;
@@ -15,6 +19,9 @@ a:hover{
     color: black;
     text-decoration: underline;
     text-shadow: 2px 2px 20px black;
+}
+.selector:hover{
+    cursor: pointer;
 }
 html{
     scroll-behavior: smooth;
@@ -26,6 +33,12 @@ html{
 #myPicture{
     position: relative;
     max-height: inherit;
+}
+.fleche{
+    position: relative;
+    top: 1px;
+    width : 75%;
+    z-index: 1;
 }
 #mobileNavbar{
     display: flex;
@@ -95,11 +108,14 @@ body{
     font-family: 'Merriweather', cursive;
     padding-bottom: 75px;
 }
-.grow{
+.grow, .grow-sm{
     transition: .2s ease-in-out;
 }
 .grow:hover{
     transform: scale(1.2);
+}
+.grow-sm:hover{
+    transform: scale(1.02);
 }
 /* timeline */
 
@@ -145,7 +161,7 @@ body{
     width: 46%;
     float: left;
     border: 1px solid #d4d4d4;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 20px;
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
