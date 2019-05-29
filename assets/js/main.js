@@ -45,7 +45,11 @@ $(function(){
         }else {
             $(this).find('b').text("Afficher plus");
         }
+        //animate on scroll init
+        AOS.init({duration:750,once:false});
     });
+    //animate on scroll init
+    AOS.init({duration:750,once:false});
 });
 //si je scrolle
 $(window).scroll(function(){
