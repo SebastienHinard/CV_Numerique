@@ -19,7 +19,7 @@ $(function(){
     // je met à jour les animations
     updateAnimations();
     // //smooth scroll lorsque je clique sur un lien
-    $('a').click(function(){
+    $('.anchor').click(function(){
         // j'anime le html et le body et je scroll vers l'ancre href
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top

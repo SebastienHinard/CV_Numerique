@@ -7,6 +7,19 @@
 main{
     overflow-x: hidden;
 }
+.carousel-item{
+    height: 400px;
+}
+.carousel-item>div{
+    height: inherit;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px 10px;
+    box-shadow: 1px 1px 10px grey;
+}
+.carousel-control-prev, .carousel-control-next{
+    color: black!important;
+}
 i{
     color: white;
 }

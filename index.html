@@ -13,10 +13,10 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137391804-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-137391804-2');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-137391804-2');
     </script>
     <title>Hinard Sébastien --CV Numérique</title>
 </head>
@@ -48,11 +48,11 @@
         </header>
         <!-- navbar sticky top pour PC et mode paysage -->
         <nav id="stickyNavbar" class="d-none d-md-flex justify-content-center navbar sticky-top navbar-dark bg5">
-            <a class="navbar-brand grow" href="#competences">Compétences</a>
-            <a class="navbar-brand grow" href="#formation">Formation</a>
-            <a class="navbar-brand grow" href="#experience">Expérience</a>
-            <a class="navbar-brand grow" href="#moreInfo">+ d'infos</a>
-            <a class="navbar-brand grow" href="#contact">Contact</a>
+            <a class="navbar-brand grow anchor" href="#competences">Compétences</a>
+            <a class="navbar-brand grow anchor" href="#formation">Formation</a>
+            <a class="navbar-brand grow anchor" href="#experience">Expérience</a>
+            <a class="navbar-brand grow anchor" href="#moreInfo">+ d'infos</a>
+            <a class="navbar-brand grow anchor" href="#contact">Contact</a>
         </nav>
         <!-- main -->
         <main class="mt-5">
@@ -63,9 +63,9 @@
                 <!-- <img class="d-lg-none float-right w-50 shadow img-fluid" src="assets/img/photo_mini.JPG" alt="Ma photo de profil"> -->
                 <!-- <img class="d-none d-lg-inline float-right w-25 shadow img-fluid" src="assets/img/photo_mini.JPG" alt="Ma photo de profil"> -->
                 <img id="myPicture" class="w-50 float-right shadow img-fluid" src="assets/img/photo_mini.JPG" alt="Ma photo de profil">
-                <p>Après de nombreuses années d'expérience dans la vente, suite auxquelles j'ai pu acquérir et renforcer certaines de mes compétences, j'ai décidé d'effectuer un virage à 180°, et de me tourner vers le développement numérique.</p>
+                <p>Après de nombreuses années d'expérience dans la vente, suite auxquelles j'ai pu acquérir et renforcer certaines de mes compétences, j'ai décidé d'effectuer un virage à 180° et de me tourner vers le développemment numérique.</p>
                 <p>Je suis actuellement en formation à <a href="https://lamanu.fr/amiens" target="_blank">La Manu - école du numérique</a>, où je prépare le titre professionnel de développeur web et web mobile ( RNCP 31114 ).</p>
-                <p>Mon objectif, après obtention de mon titre professionnel, et de pouvoir continuer ma formation en alternance, afin de préparer le titre de Concepteur, développeur d'applications ( RNCP 31678 ). Mon but est de me spécialiser dans le dévelopement d'applications mobiles.</p>
+                <p>Mon objectif, après obtention de mon titre professionnel est de pouvoir continuer ma formation en alternance, afin de préparer le titre de "concepteur, développeur d'applications" ( RNCP 31678 ). Mon but est de me spécialiser dans le dévelopement d'applications mobiles.</p>
                 <p>N'hésitez à me contacter pour plus d'informations.</p>
             </section>
             <!-- Page des compétences -->
@@ -252,51 +252,72 @@
             <!-- Page d'experiences professionelles -->
             <section id="experience" class="py-4 mx-2 mx-lg-5">
                 <h2 data-aos="slide-left" class="grow">Expérience</h2>
+                <hr class="w-50 mb-5">
+                <!-- experiences liées au dev -->
+                <h3 data-aos="slide-right" class="grow">Expériences liées au développement</h3>
+                <hr class="w-50">
+                <!-- carousel projets -->
+                <div id="carouselProjets" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active p-3">
+                            <div class="shadow h-100 p-4 text-center">
+                                <h4 class="text-center">Création d'une page E-Commerce.</h4>
+                                <hr class="w-50">
+                                <p>Technologies utilisées: HTML/CSS, Bootstrap, <b>AngularJs</b>.</p>
+                                <img src="assets/img/coinlecture.png" alt="Le coin lecture" class="w-25 shadow">
+                                <p class="align-self-end"><a href="https://sebastienhinard.github.io/LeCoinLecture/" target="_blank" title="Le coin Lecture"><b>Le coin Lecture</b></a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-3">
+                            <div class="shadow h-100 p-4 text-center">
+                                <h4 class="text-center">Création d'une page E-Commerce.</h4>
+                                <hr class="w-50">
+                                <p>Technologies utilisées: HTML/CSS, Bootstrap, JS, <b>JQuerry</b>.</p>
+                                <img src="assets/img/quish.png" alt="Quish.fr" class="w-25 shadow">
+                                <p class="align-self-end"><a href="https://sebastienhinard.github.io/Quich.fr/" target="_blank" title="Quish.fr - gagnez plus pour dépenser plus"><b>Quish.fr</b></a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-3">
+                            <div class="shadow h-100 p-4 text-center">
+                                <h4 class="text-center">Intégration d'une maquette.</h4>
+                                <hr class="w-50">
+                                <p>Copie de la page d'accueil d'un site commercial existant dans un but éducatif.</p>
+                                <p>Technologies utilisées: HTML/CSS, Boostrap, Github.</p>
+                                <p class="align-self-end"><b>Accès au repository privé sur demande uniquement.</b></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-3">
+                            <div class="shadow h-100 p-4 text-center">
+                                <h4 class="text-center">Intégration d'un assistant vocal pour la société InnovalTech (en cours)</h4>
+                                <hr class="w-50">
+                                <p>Technologies utilisée: Python.</p>
+                                <img src="assets/img/bilbot.jpg" alt="bilbot" class="w-25 shadow">
+                                <p class="align-self-end"><a href="http://www.pft-innovaltech.fr/" target="_blank" title="InnovalTech"><b>Site d'InnovalTech</b></a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-3">
+                            <div class="shadow h-100 p-4 text-center">
+                                <h4 class="text-center">Participation au Startup Weekend de Roubaix<small>(du 17 au 19 mai 2019)</small></h4>
+                                <hr class="w-50">
+                                <p>Première place aux cotés de l'équipe <b>Kompost'IN</b></p>
+                                <img src="assets/img/kompostin.jpg" alt="Kompostin" class="w-25 shadow">
+                                <p class="align-self-end"><a href="https://twitter.com/SWRoubaix/status/1130162906887348224" target="_blank"><b>Lien Twitter</b></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselProjets" role="button" data-slide="prev">
+                        <i class="fas fa-backward" style="color:black;"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselProjets" role="button" data-slide="next">
+                        <i class="fas fa-forward" style="color:black;"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- expériences professionelles -->
+                <h3 class="mt-5">Expériences professionelles</h3>
                 <hr class="w-50">
                 <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge bg3 shadow grow">
-                            <a href="https://lamanu.fr/amiens" target="_blank"><i class="fas fa-laptop-code"></i></a>
-                        </div>
-                        <div data-aos="zoom-in" class="timeline-panel shadow">
-                            <div class="timeline-heading">
-                                <small>Depuis mars 2019</small>
-                                <h4>Divers projets de groupe </h4>
-                            </div>
-                            <div class="timeline-body">
-                                <ul>
-                                    <li>Création d'une page E-Commerce.
-                                        <ul>
-                                            <li>Technologies utilisées: HTML/CSS, Bootstrap, JS, JQuerry, Github.</li>
-                                            <li>Liens vers le projet : <a href="https://sebastienhinard.github.io/Quich.fr/" target="_blank" title="Quish.fr - gagnez plus pour dépenser plus"><b>Quish.fr</b></a></li>
-                                        </ul>
-                                    </li>
-                                    <hr class="w-50">
-                                    <li>Intégration d'une maquette.
-                                        <ul>
-                                            <li>Copie de la page d'accueil d'un site commercial existant dans un but éducatif.</li>
-                                            <li>Technologies utilisées: HTML/CSS, Boostrap, Github.</li>
-                                            <li>Accès au repository privé sur demande uniquement.</li>
-                                        </ul>
-                                    </li>
-                                    <hr class="w-50">
-                                    <li>Intégration d'un assistant vocal et de quelques fonctionnalités pour la société InnovalTech (en cours)
-                                        <ul>
-                                            <li>Technologies utilisée: Python.</li>
-                                            <li><a href="http://www.pft-innovaltech.fr/" target="_blank" title="InnovalTech"><b>Site d'InnovalTech</b></a></li>
-                                        </ul>
-                                    </li>
-                                    <hr class="w-50">
-                                    <li>Participation au Startup Weekend de Roubaix (du 17 au 19 mai 2019)</li>
-                                        <ul>
-                                            <li>Première place aux cotés de l'équipe <b>Kompost'IN</b></li>
-                                            <li><a href="https://twitter.com/SWRoubaix" target="_blank">https://twitter.com/SWRoubaix</a></li>
-                                        </ul>
-                                </ul>
-                                <p class="float-right grow showmore"><small><b>Afficher plus</b></small></p>
-                            </div>
-                        </div>
-                    </li>
                     <li class="timeline-inverted">
                         <div class="timeline-badge bg3 shadow grow">
                             <a href="https://www.micromania.fr/magasin/151/amiens-glisy.html" target="_blank"><i class="fas fa-headset"></i></a>
@@ -445,7 +466,7 @@
                                 <hr class="w-50 d-sm-none">
                                 <h3 class="grow mx-1 mb-3 mt-sm-3">Course à pied</h3>
                                 <p class="mx-1 mb-0">Pratique occasionnelle.</p>
-                                <p class="mx-1 mb-0">Courrir la Jules Verne.</p>
+                                <p class="mx-1 mb-0">Courir la Jules Verne.</p>
                                 <p class="mx-1 mb-0">La Transbaie.</p>
                                 <p class="mx-1 mb-0">La 14/18 , la Middlewood.</p>
                             </div>
@@ -495,23 +516,23 @@
                 </div>
                 <!-- navbar sticky pour version mobile -->
                 <nav id="mobileNavbar" class="navbar fixed-bottom navbar-dark bg5 text-center">
-                    <a class="navbar-brand m-auto p-0" href="#competences">
+                    <a class="navbar-brand m-auto p-0 anchor" href="#competences">
                         <img class="idle img-fluid nofade" src="assets/img/skill.png" alt="Icone compétences">
                         <p class="mb-0"><small>Compétences</small></p>
                     </a>
-                    <a class="navbar-brand m-auto p-0" href="#formation">
+                    <a class="navbar-brand m-auto p-0 anchor" href="#formation">
                         <img class="idle img-fluid nofade" src="assets/img/scholarship.png" alt="Icone Formation">
                         <p class="mb-0"><small>Formation</small></p>
                     </a>
-                    <a class="navbar-brand m-auto p-0" href="#experience">
+                    <a class="navbar-brand m-auto p-0 anchor" href="#experience">
                         <img class="idle img-fluid nofade" src="assets/img/work.png" alt="Icone Expérience">
                         <p class="mb-0"><small>Expérience</small></p>
                     </a>
-                    <a class="navbar-brand m-auto p-0" href="#moreInfo">
+                    <a class="navbar-brand m-auto p-0 anchor" href="#moreInfo">
                         <img class="idle img-fluid nofade" src="assets/img/info.png" alt="Icone à propos">
                         <p class="mb-0"><small>+ d'infos</small></p>
                     </a>
-                    <a class="navbar-brand m-auto p-0" href="#contact">
+                    <a class="navbar-brand m-auto p-0 anchor" href="#contact">
                         <img class="idle img-fluid nofade" src="assets/img/contact.png" alt="Icone contact">
                         <p class="mb-0"><small>Contact</small></p>
                     </a>
