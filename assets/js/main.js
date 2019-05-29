@@ -18,7 +18,7 @@ $(function(){
     }
     // je met à jour les animations
     updateAnimations();
-    //smooth scroll lorsque je clique sur un lien
+    // //smooth scroll lorsque je clique sur un lien
     $('a').click(function(){
         // j'anime le html et le body et je scroll vers l'ancre href
         $('html, body').animate({
@@ -35,7 +35,17 @@ $(function(){
         $('#'+thisArticle).fadeIn(1000);
         $(this).next().fadeIn(1000);
 
-    })
+    });
+    $('.timeline-body ul').hide();
+    //lorsque je clique sur un lien showmore
+    $('.showmore').click(function(){
+        $(this).parent().find('ul').toggle(200);
+        if($(this).find('b').text()=="Afficher plus"){
+            $(this).find('b').text("Afficher moins");
+        }else {
+            $(this).find('b').text("Afficher plus");
+        }
+    });
 });
 //si je scrolle
 $(window).scroll(function(){
